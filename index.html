@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vera Studio Digital | Apps & Juegos Móviles</title>
+    <meta name="description" content="Vera Studio Digital - Estudio independiente de desarrollo de aplicaciones móviles y videojuegos de agilidad mental, productividad y neuroplasticidad.">
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --accent-cyan: #00e5ff;
+            --accent-green: #00e676;
+            --text-main: #f0f6fc;
+            --text-muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        header { text-align: center; margin-bottom: 50px; }
+        .logo-badge { display: inline-block; background: linear-gradient(135deg, #00e5ff, #7c4dff); color: #0d1117; font-weight: 900; font-size: 28px; padding: 12px 24px; border-radius: 12px; letter-spacing: 2px; margin-bottom: 16px; }
+        h1 { font-size: 32px; font-weight: 800; color: #ffffff; margin-bottom: 10px; }
+        p.subtitle { color: var(--text-muted); font-size: 18px; max-width: 600px; margin: 0 auto; }
+        .section-title { font-size: 22px; font-weight: 700; color: var(--accent-cyan); margin-bottom: 24px; border-bottom: 2px solid var(--border-color); padding-bottom: 8px; }
+        .grid-apps { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-bottom: 50px; }
+        .app-card { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; padding: 28px; transition: transform 0.2s, border-color 0.2s; display: flex; flex-direction: column; justify-content: space-between; }
+        .app-card:hover { transform: translateY(-4px); border-color: var(--accent-cyan); }
+        .app-icon { font-size: 40px; margin-bottom: 14px; }
+        .app-title { font-size: 22px; font-weight: 700; color: #ffffff; margin-bottom: 8px; }
+        .app-desc { color: var(--text-muted); font-size: 14px; margin-bottom: 20px; flex-grow: 1; }
+        .app-links { display: flex; gap: 12px; flex-wrap: wrap; }
+        .btn { display: inline-block; padding: 10px 18px; border-radius: 8px; font-size: 13px; font-weight: 600; text-decoration: none; transition: 0.2s; }
+        .btn-primary { background-color: var(--accent-cyan); color: #0d1117; }
+        .btn-primary:hover { opacity: 0.9; }
+        .btn-outline { background-color: transparent; border: 1px solid var(--border-color); color: var(--text-main); }
+        .btn-outline:hover { background-color: rgba(255,255,255,0.05); border-color: var(--accent-cyan); }
+        footer { text-align: center; border-top: 1px solid var(--border-color); padding-top: 30px; margin-top: 50px; color: var(--text-muted); font-size: 13px; }
+        footer a { color: var(--accent-cyan); text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-badge">VERA STUDIO DIGITAL</div>
+            <h1>Desarrollo de Software & Juegos Móviles</h1>
+            <p class="subtitle">Creando experiencias digitales enfocadas en agilidad mental, productividad y tecnología intuitiva.</p>
+        </header>
+
+        <h2 class="section-title">📱 Nuestro Portafolio de Aplicaciones</h2>
+        <div class="grid-apps">
+            <!-- LUKIO -->
+            <div class="app-card">
+                <div>
+                    <div class="app-icon">🧠</div>
+                    <h3 class="app-title">LUKIO</h3>
+                    <p class="app-desc">Agilidad mental, neuroplasticidad y lectura veloz. Más de 10 disciplinas cognitivas: cálculo rápido, secuencias de memoria, atención Stroop, tablas Schulte y entrenamiento en inglés americano.</p>
+                </div>
+                <div class="app-links">
+                    <a href="./lukio/" class="btn btn-primary">Ver Detalles</a>
+                    <a href="./lukio/privacy.html" class="btn btn-outline">Política de Privacidad</a>
+                </div>
+            </div>
+
+            <!-- LISTO -->
+            <div class="app-card">
+                <div>
+                    <div class="app-icon">⚡</div>
+                    <h3 class="app-title">Listo</h3>
+                    <p class="app-desc">Aplicación de productividad, tareas y gestión rápida diseñada para organizar tu día a día con máxima eficiencia y simplicidad.</p>
+                </div>
+                <div class="app-links">
+                    <a href="./listo/" class="btn btn-primary">Ver Detalles</a>
+                    <a href="./listo/privacy.html" class="btn btn-outline">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">📬 Contacto & Soporte de Desarrollador</h2>
+        <div style="background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; padding: 24px;">
+            <p style="margin-bottom: 8px;"><strong>Desarrollador:</strong> Omar Vera Huanca (Vera Studio Digital)</p>
+            <p style="margin-bottom: 8px;"><strong>Ubicación:</strong> Cochabamba, Bolivia</p>
+            <p><strong>Correo Electrónico de Soporte:</strong> <a href="mailto:verastudiodigital@gmail.com" style="color: var(--accent-cyan); text-decoration: none;">verastudiodigital@gmail.com</a></p>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Vera Studio Digital. Todos los derechos reservados.</p>
+            <p style="margin-top: 6px;"><a href="./lukio/privacy.html">Privacidad LUKIO</a> · <a href="./listo/privacy.html">Privacidad Listo</a> · <a href="./app-ads.txt">app-ads.txt</a></p>
+        </footer>
+    </div>
+</body>
+</html>
