@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad | Listo</title>
+    <title>Política de Privacidad | Listo - Alerta de Cobros QR</title>
     <style>
         :root {
             --bg-color: #0d1117;
             --card-bg: #161b22;
             --border-color: #30363d;
+            --accent-green: #00e676;
             --accent-cyan: #00e5ff;
             --text-main: #f0f6fc;
             --text-muted: #8b949e;
@@ -16,46 +17,65 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
         body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.7; padding: 40px 20px; }
         .container { max-width: 850px; margin: 0 auto; background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; padding: 40px; }
-        h1 { font-size: 28px; color: var(--accent-cyan); margin-bottom: 10px; }
-        .last-updated { color: var(--text-muted); font-size: 14px; margin-bottom: 30px; border-bottom: 1px solid var(--border-color); padding-bottom: 16px; }
-        h2 { font-size: 20px; color: #ffffff; margin-top: 28px; margin-bottom: 12px; }
+        .header-logo { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+        .header-logo img { width: 56px; height: 56px; border-radius: 12px; }
+        h1 { font-size: 26px; color: var(--accent-green); margin-bottom: 4px; }
+        .app-sub { color: var(--text-muted); font-size: 15px; font-weight: 500; }
+        .last-updated { color: var(--text-muted); font-size: 14px; margin: 20px 0 24px; border-bottom: 1px solid var(--border-color); padding-bottom: 12px; }
+        h2 { font-size: 19px; color: #ffffff; margin-top: 28px; margin-bottom: 12px; }
         p { margin-bottom: 16px; color: #c9d1d9; font-size: 15px; }
         ul { margin-left: 24px; margin-bottom: 16px; color: #c9d1d9; font-size: 15px; }
         li { margin-bottom: 8px; }
-        a { color: var(--accent-cyan); text-decoration: none; }
+        a { color: var(--accent-green); text-decoration: none; }
         a:hover { text-decoration: underline; }
         .back-link { display: inline-block; margin-bottom: 24px; color: var(--accent-cyan); font-weight: 600; }
+        .badge-box { background: rgba(0, 230, 118, 0.1); border: 1px solid rgba(0, 230, 118, 0.3); border-radius: 10px; padding: 14px; margin: 16px 0; }
     </style>
 </head>
 <body>
     <div class="container">
         <a href="../" class="back-link">⬅ Volver a Vera Studio Digital</a>
-        <h1>Política de Privacidad de Listo</h1>
-        <div class="last-updated">Última actualización: 28 de Agosto de 2026</div>
+        
+        <div class="header-logo">
+            <img src="./logo.png" alt="Listo Logo">
+            <div>
+                <h1>Listo - Alerta de Cobros QR</h1>
+                <div class="app-sub">Vera Studio Digital · Productividad Comercial</div>
+            </div>
+        </div>
 
-        <p><strong>Vera Studio Digital</strong> (representado por Omar Vera Huanca) se compromete a proteger la privacidad de los usuarios de la aplicación <strong>Listo</strong> (en adelante, "la Aplicación"). Esta Política de Privacidad describe nuestras prácticas respecto a los datos y la privacidad.</p>
+        <div class="last-updated">Última actualización: 24 de julio de 2026</div>
 
-        <h2>1. Recopilación y Uso de Información</h2>
-        <p><strong>Listo es una aplicación diseñada para el respeto total de la privacidad del usuario.</strong> No recopilamos, no vendemos ni compartimos información de identificación personal con terceros.</p>
-        <p>Toda la información ingresada por el usuario (tareas, notas, listas y configuraciones) se almacena y procesa <strong>de forma estrictamente local en el dispositivo</strong> o en los servicios autorizados por el usuario.</p>
+        <p><strong>Vera Studio Digital</strong> desarrolló la aplicación <strong>Listo - Alerta de Cobros QR</strong> como una herramienta utilitaria de productividad comercial diseñada para emprendedores, comerciantes y negocios en Bolivia.</p>
 
-        <h2>2. Permisos del Dispositivo</h2>
-        <p>La Aplicación puede solicitar únicamente los permisos estrictamente necesarios para su funcionamiento básico (como notificaciones locales para recordatorios de tareas). Estos permisos no se utilizan para rastrear ni recopilar datos del usuario.</p>
+        <h2>1. Uso del Servicio de Notificaciones (BIND_NOTIFICATION_LISTENER_SERVICE)</h2>
+        <div class="badge-box">
+            <p style="margin: 0; color: #e6fffa;">La aplicación accede a las notificaciones recibidas en el dispositivo con el <strong>único propósito de procesar localmente las alertas de cobros confirmados</strong> (Yape, Yastá, Zas, Altoke, Yolo Pago y bancos de Bolivia) y anunciarlas por voz en tiempo real.</p>
+        </div>
+        <p>Este permiso es fundamental para que la aplicación pueda detectar cuándo se ha acreditado una transferencia por código QR y leer el monto al instante.</p>
 
-        <h2>3. Servicios de Terceros</h2>
-        <p>La Aplicación no transfiere datos privados a servidores publicitarios invasivos ni a intermediarios de datos.</p>
-
-        <h2>4. Seguridad de los Datos</h2>
-        <p>Nos aseguramos de que cualquier comunicación o respaldo se realice bajo los protocolos de cifrado y seguridad estándar recomendados por Google Play.</p>
-
-        <h2>5. Contacto y Soporte</h2>
-        <p>Si tienes preguntas o necesitas soporte respecto a Listo o esta Política de Privacidad, puedes escribirnos a:</p>
+        <h2>2. Privacidad de Datos y Seguridad 100% Local</h2>
+        <p><strong>Listo no recopila, almacena, transmite ni comparte información bancaria, financiera ni personal de los usuarios en servidores externos.</strong></p>
         <ul>
-            <li><strong>Estudio:</strong> Vera Studio Digital</li>
-            <li><strong>Desarrollador:</strong> Omar Vera Huanca</li>
-            <li><strong>Email:</strong> <a href="mailto:verastudiodigital@gmail.com">verastudiodigital@gmail.com</a></li>
-            <li><strong>Sitio Web:</strong> <a href="https://verastudiodigital.site">https://verastudiodigital.site</a></li>
+            <li>Todo el procesamiento de texto y lectura de notificaciones se realiza de forma <strong>100% local</strong> en el procesador de tu propio dispositivo.</li>
+            <li>Listo <strong>no maneja dinero</strong>, no solicita credenciales bancarias ni contraseñas.</li>
+            <li>Los reportes diarios y totales exportables a Excel (CSV) se generan exclusivamente en el almacenamiento local del usuario.</li>
         </ul>
+
+        <h2>3. Publicidad de Terceros (Google AdMob)</h2>
+        <p>La aplicación utiliza el SDK oficial de <strong>Google AdMob</strong> para mostrar anuncios publicitarios que permiten mantener el desarrollo de la herramienta. AdMob puede recopilar identificadores anónimos del dispositivo (como el ID de publicidad de Google) y datos de diagnóstico conforme a las <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">políticas de privacidad de Google</a>.</p>
+
+        <h2>4. Contacto y Soporte</h2>
+        <p>Para consultas o soporte respecto a la privacidad de la aplicación, contáctenos en:</p>
+        <ul>
+            <li><strong>Desarrollador:</strong> Vera Studio Digital (Omar Vera Huanca)</li>
+            <li><strong>Correo Electrónico:</strong> <a href="mailto:verastudiodigital@gmail.com">verastudiodigital@gmail.com</a></li>
+            <li><strong>Sitio Web Oficial:</strong> <a href="https://verastudiodigital.site">https://verastudiodigital.site</a></li>
+        </ul>
+
+        <div style="margin-top: 30px; text-align: center; border-top: 1px solid var(--border-color); padding-top: 20px;">
+            <a href="../">⬅ Volver al inicio de Vera Studio Digital</a>
+        </div>
     </div>
 </body>
 </html>

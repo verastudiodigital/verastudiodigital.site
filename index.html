@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vera Studio Digital | Apps & Juegos Móviles</title>
-    <meta name="description" content="Vera Studio Digital - Estudio independiente de desarrollo de aplicaciones móviles y videojuegos de agilidad mental, productividad y neuroplasticidad.">
+    <meta name="description" content="Vera Studio Digital - Estudio independiente de desarrollo de aplicaciones móviles y videojuegos de agilidad mental, productividad y neuroplasticidad en Cochabamba, Bolivia.">
     <style>
         :root {
             --bg-color: #0d1117;
@@ -19,20 +19,22 @@
         body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
         .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
         header { text-align: center; margin-bottom: 50px; }
-        .logo-badge { display: inline-block; background: linear-gradient(135deg, #00e5ff, #7c4dff); color: #0d1117; font-weight: 900; font-size: 28px; padding: 12px 24px; border-radius: 12px; letter-spacing: 2px; margin-bottom: 16px; }
+        .logo-badge { display: inline-block; background: linear-gradient(135deg, #00e5ff, #7c4dff); color: #0d1117; font-weight: 900; font-size: 26px; padding: 12px 24px; border-radius: 12px; letter-spacing: 2px; margin-bottom: 16px; }
         h1 { font-size: 32px; font-weight: 800; color: #ffffff; margin-bottom: 10px; }
-        p.subtitle { color: var(--text-muted); font-size: 18px; max-width: 600px; margin: 0 auto; }
+        p.subtitle { color: var(--text-muted); font-size: 17px; max-width: 650px; margin: 0 auto; }
         .section-title { font-size: 22px; font-weight: 700; color: var(--accent-cyan); margin-bottom: 24px; border-bottom: 2px solid var(--border-color); padding-bottom: 8px; }
-        .grid-apps { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-bottom: 50px; }
+        .grid-apps { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-bottom: 50px; }
         .app-card { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; padding: 28px; transition: transform 0.2s, border-color 0.2s; display: flex; flex-direction: column; justify-content: space-between; }
         .app-card:hover { transform: translateY(-4px); border-color: var(--accent-cyan); }
-        .app-icon { font-size: 40px; margin-bottom: 14px; }
-        .app-title { font-size: 22px; font-weight: 700; color: #ffffff; margin-bottom: 8px; }
-        .app-desc { color: var(--text-muted); font-size: 14px; margin-bottom: 20px; flex-grow: 1; }
+        .app-header { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+        .app-logo-img { width: 52px; height: 52px; border-radius: 12px; }
+        .app-title { font-size: 20px; font-weight: 700; color: #ffffff; }
+        .app-tag { font-size: 12px; color: var(--text-muted); }
+        .app-desc { color: #c9d1d9; font-size: 14px; margin-bottom: 20px; flex-grow: 1; }
         .app-links { display: flex; gap: 12px; flex-wrap: wrap; }
         .btn { display: inline-block; padding: 10px 18px; border-radius: 8px; font-size: 13px; font-weight: 600; text-decoration: none; transition: 0.2s; }
-        .btn-primary { background-color: var(--accent-cyan); color: #0d1117; }
-        .btn-primary:hover { opacity: 0.9; }
+        .btn-cyan { background-color: var(--accent-cyan); color: #0d1117; }
+        .btn-green { background-color: var(--accent-green); color: #0d1117; }
         .btn-outline { background-color: transparent; border: 1px solid var(--border-color); color: var(--text-main); }
         .btn-outline:hover { background-color: rgba(255,255,255,0.05); border-color: var(--accent-cyan); }
         footer { text-align: center; border-top: 1px solid var(--border-color); padding-top: 30px; margin-top: 50px; color: var(--text-muted); font-size: 13px; }
@@ -43,49 +45,60 @@
     <div class="container">
         <header>
             <div class="logo-badge">VERA STUDIO DIGITAL</div>
-            <h1>Desarrollo de Software & Juegos Móviles</h1>
-            <p class="subtitle">Creando experiencias digitales enfocadas en agilidad mental, productividad y tecnología intuitiva.</p>
+            <h1>Desarrollo de Software & Aplicaciones Móviles</h1>
+            <p class="subtitle">Creando herramientas utilitarias de productividad comercial y experiencias de agilidad mental e interactividad.</p>
         </header>
 
-        <h2 class="section-title">📱 Nuestro Portafolio de Aplicaciones</h2>
+        <h2 class="section-title">📱 Portafolio de Aplicaciones Oficiales</h2>
         <div class="grid-apps">
-            <!-- LUKIO -->
-            <div class="app-card">
-                <div>
-                    <div class="app-icon">🧠</div>
-                    <h3 class="app-title">LUKIO</h3>
-                    <p class="app-desc">Agilidad mental, neuroplasticidad y lectura veloz. Más de 10 disciplinas cognitivas: cálculo rápido, secuencias de memoria, atención Stroop, tablas Schulte y entrenamiento en inglés americano.</p>
-                </div>
-                <div class="app-links">
-                    <a href="./lukio/" class="btn btn-primary">Ver Detalles</a>
-                    <a href="./lukio/privacy.html" class="btn btn-outline">Política de Privacidad</a>
-                </div>
-            </div>
-
             <!-- LISTO -->
-            <div class="app-card">
+            <div class="app-card" style="border-color: rgba(0, 230, 118, 0.3);">
                 <div>
-                    <div class="app-icon">⚡</div>
-                    <h3 class="app-title">Listo</h3>
-                    <p class="app-desc">Aplicación de productividad, tareas y gestión rápida diseñada para organizar tu día a día con máxima eficiencia y simplicidad.</p>
+                    <div class="app-header">
+                        <img src="./listo/logo.png" alt="Listo Logo" class="app-logo-img">
+                        <div>
+                            <h3 class="app-title">Listo - Alerta de Cobros QR</h3>
+                            <span class="app-tag">⚡ Productividad Comercial · Bolivia</span>
+                        </div>
+                    </div>
+                    <p class="app-desc">Herramienta esencial para comerciantes y emprendedores. Anuncia tus ventas QR por voz al instante. Compatible con Yape, Yastá, Zas, Altoke y bancos de Bolivia con totalizador diario y exportación a Excel.</p>
                 </div>
                 <div class="app-links">
-                    <a href="./listo/" class="btn btn-primary">Ver Detalles</a>
+                    <a href="./listo/" class="btn btn-green">Ver Aplicación</a>
                     <a href="./listo/privacy.html" class="btn btn-outline">Política de Privacidad</a>
                 </div>
             </div>
+
+            <!-- LUKIO -->
+            <div class="app-card" style="border-color: rgba(0, 229, 255, 0.3);">
+                <div>
+                    <div class="app-header">
+                        <div style="font-size: 40px; line-height: 1;">🧠</div>
+                        <div>
+                            <h3 class="app-title">LUKIO: Gimnasia Mental</h3>
+                            <span class="app-tag">🎯 Neuroplasticidad & Agilidad</span>
+                        </div>
+                    </div>
+                    <p class="app-desc">Entrenamiento cognitivo con más de 10 disciplinas: cálculo mental, memoria de secuencias, atención Stroop, tablas Schulte, Dual N-Back, vocabulario e inglés americano con voz nativa.</p>
+                </div>
+                <div class="app-links">
+                    <a href="./lukio/" class="btn btn-cyan">Ver Aplicación</a>
+                    <a href="./lukio/privacy.html" class="btn btn-outline">Política de Privacidad</a>
+                </div>
+            </div>
         </div>
 
-        <h2 class="section-title">📬 Contacto & Soporte de Desarrollador</h2>
+        <h2 class="section-title">📬 Contacto & Soporte Oficial</h2>
         <div style="background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; padding: 24px;">
-            <p style="margin-bottom: 8px;"><strong>Desarrollador:</strong> Omar Vera Huanca (Vera Studio Digital)</p>
+            <p style="margin-bottom: 8px;"><strong>Desarrollador / Titular:</strong> Omar Vera Huanca</p>
+            <p style="margin-bottom: 8px;"><strong>Estudio:</strong> Vera Studio Digital</p>
             <p style="margin-bottom: 8px;"><strong>Ubicación:</strong> Cochabamba, Bolivia</p>
-            <p><strong>Correo Electrónico de Soporte:</strong> <a href="mailto:verastudiodigital@gmail.com" style="color: var(--accent-cyan); text-decoration: none;">verastudiodigital@gmail.com</a></p>
+            <p><strong>Correo Electrónico:</strong> <a href="mailto:verastudiodigital@gmail.com" style="color: var(--accent-cyan); text-decoration: none;">verastudiodigital@gmail.com</a></p>
         </div>
 
         <footer>
-            <p>&copy; 2026 Vera Studio Digital. Todos los derechos reservados.</p>
-            <p style="margin-top: 6px;"><a href="./lukio/privacy.html">Privacidad LUKIO</a> · <a href="./listo/privacy.html">Privacidad Listo</a> · <a href="./app-ads.txt">app-ads.txt</a></p>
+            <p>&copy; 2026 Vera Studio Digital · Todos los derechos reservados.</p>
+            <p style="margin-top: 6px;"><a href="./listo/privacy.html">Privacidad Listo</a> · <a href="./lukio/privacy.html">Privacidad LUKIO</a> · <a href="./app-ads.txt">app-ads.txt</a></p>
         </footer>
     </div>
 </body>
