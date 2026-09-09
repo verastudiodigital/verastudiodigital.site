@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -31,12 +31,15 @@
         .bank-list h3 { font-size: 18px; color: var(--accent-cyan); margin-bottom: 14px; }
         .bank-tags { display: flex; flex-wrap: wrap; gap: 10px; }
         .bank-tag { background: rgba(0, 229, 255, 0.08); border: 1px solid rgba(0, 229, 255, 0.2); color: var(--text-main); font-size: 13px; font-weight: 600; padding: 6px 12px; border-radius: 6px; }
-        .buttons-row { text-align: center; margin-bottom: 40px; }
-        .btn { display: inline-block; padding: 12px 24px; border-radius: 8px; font-size: 15px; font-weight: 700; text-decoration: none; margin: 6px; transition: 0.2s; }
+        .buttons-row { text-align: center; margin-bottom: 40px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 24px; border-radius: 10px; font-size: 15px; font-weight: 700; text-decoration: none; transition: 0.2s; }
+        .btn-play { background: linear-gradient(135deg, #00e676, #00b0ff); color: #0d1117; box-shadow: 0 4px 18px rgba(0, 230, 118, 0.35); }
+        .btn-play:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(0, 230, 118, 0.5); }
         .btn-primary { background-color: var(--accent-green); color: #0d1117; }
         .btn-primary:hover { opacity: 0.9; }
         .btn-outline { background-color: transparent; border: 1px solid var(--border-color); color: var(--text-main); }
-        .btn-outline:hover { border-color: var(--accent-green); }
+        .btn-outline:hover { border-color: var(--accent-green); background-color: rgba(255,255,255,0.04); }
+        .cta-box { background: linear-gradient(180deg, rgba(0, 230, 118, 0.08), rgba(0, 230, 118, 0.02)); border: 1px solid rgba(0, 230, 118, 0.3); border-radius: 16px; padding: 32px 20px; text-align: center; margin-bottom: 40px; }
         footer { text-align: center; border-top: 1px solid var(--border-color); padding-top: 24px; color: var(--text-muted); font-size: 13px; }
         footer a { color: var(--accent-green); text-decoration: none; }
     </style>
@@ -52,7 +55,16 @@
         </header>
 
         <div class="buttons-row">
-            <a href="./privacy.html" class="btn btn-primary">Política de Privacidad</a>
+            <a href="https://play.google.com/store/apps/details?id=com.verastudio.listo" target="_blank" rel="noopener" class="btn btn-play">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.609 1.814C3.228 2.233 3 2.84 3 3.5v17c0 .66.228 1.267.609 1.686l.088.087 9.575-9.576v-.394L3.697 1.727l-.088.087z" fill="#00D3FF"/>
+                    <path d="M16.467 15.689l-3.195-3.195v-.388l3.195-3.195.073.042 3.784 2.15c1.08.614 1.08 1.62 0 2.234l-3.784 2.152-.073.042z" fill="#FFCE00"/>
+                    <path d="M13.345 12.302L3.609 22.038c.42.446 1.116.502 1.905.056l11.026-6.265-3.195-3.527z" fill="#FF334B"/>
+                    <path d="M13.345 11.698l3.195-3.527L5.514 1.906C4.725 1.46 4.029 1.516 3.609 1.962l9.736 9.736z" fill="#00E676"/>
+                </svg>
+                <span>Descargar en Google Play</span>
+            </a>
+            <a href="./privacy.html" class="btn btn-outline">Política de Privacidad</a>
             <a href="../" class="btn btn-outline">⬅ Inicio Vera Studio Digital</a>
         </div>
 
@@ -90,6 +102,20 @@
                 <span class="bank-tag">🏦 Banco FIE</span>
                 <span class="bank-tag">🏦 Cooperativas y Más</span>
             </div>
+        </div>
+
+        <div class="cta-box">
+            <h2 style="font-size: 22px; font-weight: 800; margin-bottom: 10px; color: #ffffff;">¿Listo para escuchar tus ventas por voz?</h2>
+            <p style="color: var(--text-muted); font-size: 15px; max-width: 580px; margin: 0 auto 22px;">Descarga la aplicación gratis en Google Play y comienza a optimizar los cobros en tu negocio de forma 100% segura y privada.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.verastudio.listo" target="_blank" rel="noopener" class="btn btn-play">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.609 1.814C3.228 2.233 3 2.84 3 3.5v17c0 .66.228 1.267.609 1.686l.088.087 9.575-9.576v-.394L3.697 1.727l-.088.087z" fill="#00D3FF"/>
+                    <path d="M16.467 15.689l-3.195-3.195v-.388l3.195-3.195.073.042 3.784 2.15c1.08.614 1.08 1.62 0 2.234l-3.784 2.152-.073.042z" fill="#FFCE00"/>
+                    <path d="M13.345 12.302L3.609 22.038c.42.446 1.116.502 1.905.056l11.026-6.265-3.195-3.527z" fill="#FF334B"/>
+                    <path d="M13.345 11.698l3.195-3.527L5.514 1.906C4.725 1.46 4.029 1.516 3.609 1.962l9.736 9.736z" fill="#00E676"/>
+                </svg>
+                <span>Descargar en Google Play</span>
+            </a>
         </div>
 
         <footer>
